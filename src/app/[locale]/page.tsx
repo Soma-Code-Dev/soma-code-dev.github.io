@@ -15,9 +15,11 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
     <div className="flex flex-col min-h-screen">
       <header className="flex justify-between items-center p-6 lg:px-12 border-b border-brand-green/20">
         <div className="flex items-center">
-          <a href="#home" className="flex items-center gap-3 transition-transform hover:scale-105 group">
-            <span className="font-pixel text-brand-green text-3xl md:text-4xl mt-1 group-hover:animate-pulse">+</span>
-            <h1 className="font-pixel text-xl md:text-2xl tracking-widest leading-none mt-2 text-brand-light">SOMA<br/>CODE</h1>
+          <a href="#home" className="flex items-center gap-4 transition-transform hover:scale-105 group">
+            <svg className="w-8 h-8 md:w-10 md:h-10 text-brand-green group-hover:animate-pulse" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M12 4 h8 v8 h8 v8 h-8 v8 h-8 v-8 h-8 v-8 h8 Z" />
+            </svg>
+            <h1 className="font-pixel text-lg md:text-xl tracking-wide leading-[1.1] text-brand-light font-normal text-left">SOMA<br/>CODE</h1>
           </a>
         </div>
         <nav className="hidden md:flex gap-6 font-semibold">
@@ -124,9 +126,11 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
       </main>
       
       <footer className="bg-black py-10 text-center text-sm text-gray-500 border-t border-gray-800 flex flex-col items-center justify-center">
-         <div className="flex items-center gap-2 mb-6 opacity-50">
-           <span className="font-pixel text-brand-green text-xl mt-1">+</span>
-           <span className="font-pixel text-base tracking-widest text-brand-light">SOMA CODE</span>
+         <div className="flex items-center gap-3 mb-6 opacity-60 hover:opacity-100 transition-opacity">
+           <svg className="w-5 h-5 text-brand-green" viewBox="0 0 32 32" fill="currentColor">
+             <path d="M12 4 h8 v8 h8 v8 h-8 v8 h-8 v-8 h-8 v-8 h8 Z" />
+           </svg>
+           <span className="font-pixel text-sm tracking-wide text-brand-light font-normal">SOMA CODE</span>
          </div>
          <p className="mb-2">&copy; {new Date().getFullYear()} SOMA CODE. All rights reserved.</p>
          <p className="text-gray-600 font-medium">
