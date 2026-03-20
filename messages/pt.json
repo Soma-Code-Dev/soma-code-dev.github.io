@@ -1,0 +1,32 @@
+{
+  "Navigation": {
+    "home": "Início",
+    "services": "Serviços",
+    "about": "Sobre Nós",
+    "contact": "Contato"
+  },
+  "Hero": {
+    "title": "Bem-vindo à",
+    "subtitle": "Criando experiências digitais incríveis.",
+    "cta": "Começar"
+  },
+  "Services": {
+    "title": "Nossos Serviços",
+    "web": "Desenvolvimento Web",
+    "mobile": "Aplicativos Móveis",
+    "design": "Design de UI/UX"
+  },
+  "About": {
+    "title": "Sobre a Soma Code",
+    "description": "A Soma Code é uma software house focada em entregar experiências digitais modernas, escaláveis e focadas no usuário. Desenvolvemos desde MVPs ágeis até sistemas de gestão complexos, utilizando as tecnologias mais avançadas do mercado.",
+    "tech": "Nossas Tecnologias",
+    "project": "Projeto Destaque",
+    "shukkinDesc": "Um aplicativo web moderno e multilíngue para controle de ponto e gestão de presença."
+  },
+  "Contact": {
+    "title": "Entre em Contato",
+    "github": "Explore nosso GitHub",
+    "linkedin": "Conecte-se no LinkedIn",
+    "developedBy": "Desenvolvido por"
+  }
+}

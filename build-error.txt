@@ -1,0 +1,26 @@
+
+> soma-code-website@0.1.0 build
+> next build
+
+▲ Next.js 16.2.0 (Turbopack)
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 1389ms
+  Running TypeScript ...
+  Finished TypeScript in 1496ms ...
+  Collecting page data using 4 workers ...
+  Generating static pages using 4 workers (0/5) ...
+Error occurred prerendering page "/pt". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: `useTranslations` is not callable within an async component. Please refer to https://next-intl.dev/docs/environments/server-client-components#async-components
+    at <unknown> (C:\Users\Yuji\Documents\GitHub\.github\soma-code-website\.next\server\chunks\ssr\_00ffewz._.js:3:2683)
+    at i (C:\Users\Yuji\Documents\GitHub\.github\soma-code-website\.next\server\chunks\ssr\_00ffewz._.js:3:2855)
+    at m (C:\Users\Yuji\Documents\GitHub\.github\soma-code-website\.next\server\chunks\ssr\_00ffewz._.js:3:3003) {
+  digest: '2674095217',
+  [cause]: TypeError: Cannot read properties of null (reading 'use')
+      at <unknown> (C:\Users\Yuji\Documents\GitHub\.github\soma-code-website\.next\server\chunks\ssr\_00ffewz._.js:3:2571)
+      at i (C:\Users\Yuji\Documents\GitHub\.github\soma-code-website\.next\server\chunks\ssr\_00ffewz._.js:3:2855)
+      at m (C:\Users\Yuji\Documents\GitHub\.github\soma-code-website\.next\server\chunks\ssr\_00ffewz._.js:3:3003)
+}
+Export encountered an error on /[locale]/page: /pt, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null

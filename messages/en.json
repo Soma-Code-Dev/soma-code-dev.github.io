@@ -1,0 +1,32 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Welcome to",
+    "subtitle": "Building stunning digital experiences.",
+    "cta": "Get Started"
+  },
+  "Services": {
+    "title": "Our Services",
+    "web": "Web Development",
+    "mobile": "Mobile Applications",
+    "design": "UI/UX Design"
+  },
+  "About": {
+    "title": "About Soma Code",
+    "description": "Soma Code is a software house focused on delivering modern, scalable, and user-centric digital experiences. We develop everything from agile MVPs to complex management systems, using the most advanced technologies on the market.",
+    "tech": "Our Tech Stack",
+    "project": "Featured Project",
+    "shukkinDesc": "A modern, multilingual time-tracking and attendance management web application."
+  },
+  "Contact": {
+    "title": "Get In Touch",
+    "github": "Explore our GitHub",
+    "linkedin": "Connect on LinkedIn",
+    "developedBy": "Developed by"
+  }
+}

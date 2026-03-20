@@ -1,0 +1,32 @@
+{
+  "Navigation": {
+    "home": "ホーム",
+    "services": "サービス",
+    "about": "私たちについて",
+    "contact": "お問い合わせ"
+  },
+  "Hero": {
+    "title": "ようこそ",
+    "subtitle": "素晴らしいデジタル体験を構築します。",
+    "cta": "始める"
+  },
+  "Services": {
+    "title": "私たちのサービス",
+    "web": "ウェブ開発",
+    "mobile": "モバイルアプリ",
+    "design": "UI/UXデザイン"
+  },
+  "About": {
+    "title": "Soma Code について",
+    "description": "Soma Code は、モダンでスケーラブル、かつユーザー中心のデジタル体験の提供に注力するソフトウェアハウスです。市場で最も先進的な技術を使用し、アジャイルなMVPから複雑な管理システムまで幅広く開発しています。",
+    "tech": "使用技術",
+    "project": "注目のプロジェクト",
+    "shukkinDesc": "モダンで多言語対応の勤怠管理ウェブアプリケーション。"
+  },
+  "Contact": {
+    "title": "お問い合わせ",
+    "github": "GitHubを見る",
+    "linkedin": "LinkedInでつながる",
+    "developedBy": "開発者:"
+  }
+}
