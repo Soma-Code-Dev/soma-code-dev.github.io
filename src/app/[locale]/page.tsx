@@ -55,21 +55,21 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
               </div>
               <h4 className="text-xl font-bold mb-3">{tServices('web')}</h4>
-              <p className="text-sm text-gray-400 leading-relaxed text-left">High-performance React and Next.js applications tailored to your business needs.</p>
+              <p className="text-sm text-gray-400 leading-relaxed text-left">{tServices('webDesc')}</p>
             </div>
             <div className="bg-gray-900 border border-gray-800 p-8 rounded-xl hover:border-brand-green/50 transition-colors group cursor-pointer">
               <div className="w-14 h-14 bg-brand-green/10 text-brand-green flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
               </div>
               <h4 className="text-xl font-bold mb-3">{tServices('mobile')}</h4>
-              <p className="text-sm text-gray-400 leading-relaxed text-left">Cross-platform mobile experiences that engage users on iOS and Android.</p>
+              <p className="text-sm text-gray-400 leading-relaxed text-left">{tServices('mobileDesc')}</p>
             </div>
             <div className="bg-gray-900 border border-gray-800 p-8 rounded-xl hover:border-brand-green/50 transition-colors group cursor-pointer">
               <div className="w-14 h-14 bg-brand-green/10 text-brand-green flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
               </div>
               <h4 className="text-xl font-bold mb-3">{tServices('design')}</h4>
-              <p className="text-sm text-gray-400 leading-relaxed text-left">User-centric design systems that look beautiful and convert effectively.</p>
+              <p className="text-sm text-gray-400 leading-relaxed text-left">{tServices('designDesc')}</p>
             </div>
           </div>
         </section>
@@ -89,22 +89,50 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
                   <span className="text-brand-green font-pixel text-xl">{'>'}</span> {tAbout('tech')}
                 </h4>
                 <div className="flex flex-wrap gap-3">
-                  {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Supabase'].map((tech) => (
-                    <span key={tech} className="px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-sm font-semibold">{tech}</span>
+                  {[
+                    { name: 'Next.js', slug: 'nextdotjs' },
+                    { name: 'React', slug: 'react' },
+                    { name: 'TypeScript', slug: 'typescript' },
+                    { name: 'Tailwind CSS', slug: 'tailwindcss' },
+                    { name: 'Drizzle ORM', slug: 'drizzle' },
+                    { name: 'Prisma', slug: 'prisma' },
+                    { name: 'Supabase', slug: 'supabase' }
+                  ].map((tech) => (
+                    <span key={tech.name} className="px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-sm font-semibold flex items-center gap-2.5 hover:border-brand-green/40 transition-all hover:scale-[1.02] group">
+                      <img 
+                        src={`https://cdn.simpleicons.org/${tech.slug}/white`} 
+                        alt="" 
+                        className="w-4 h-4 opacity-60 group-hover:opacity-100 transition-opacity"
+                        loading="lazy"
+                      />
+                      {tech.name}
+                    </span>
                   ))}
                 </div>
               </div>
-              <div className="bg-black/40 p-8 rounded-2xl border border-gray-800 hover:border-brand-green/50 transition-colors">
-                <h4 className="text-2xl font-bold mb-6 text-brand-light flex items-center gap-3">
+              <div className="bg-black/40 p-8 rounded-2xl border border-gray-800 hover:border-brand-green/30 transition-colors">
+                <h4 className="text-2xl font-bold mb-8 text-brand-light flex items-center gap-3">
                    <span className="text-brand-green font-pixel text-xl">{'>'}</span> {tAbout('project')}
                 </h4>
-                <a href="https://shukkin.vercel.app/" target="_blank" rel="noopener noreferrer" className="block group">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xl font-bold group-hover:text-brand-green transition-colors">Shukkin</span>
-                    <svg className="w-5 h-5 text-gray-500 group-hover:text-brand-green transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-                  </div>
-                  <p className="text-gray-400 text-sm leading-relaxed">{tAbout('shukkinDesc')}</p>
-                </a>
+                <div className="space-y-8">
+                  <a href="https://shukkin.vercel.app/" target="_blank" rel="noopener noreferrer" className="block group">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xl font-bold group-hover:text-brand-green transition-colors">Shukkin</span>
+                      <svg className="w-5 h-5 text-gray-500 group-hover:text-brand-green transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                    </div>
+                    <p className="text-gray-400 text-sm leading-relaxed">{tAbout('shukkinDesc')}</p>
+                  </a>
+
+                  <div className="h-px bg-gradient-to-r from-transparent via-gray-800 to-transparent"></div>
+
+                  <a href="https://kantanflow.vercel.app/" target="_blank" rel="noopener noreferrer" className="block group">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xl font-bold group-hover:text-brand-green transition-colors">Kantan Flow</span>
+                      <svg className="w-5 h-5 text-gray-500 group-hover:text-brand-green transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                    </div>
+                    <p className="text-gray-400 text-sm leading-relaxed">{tAbout('kantanFlowDesc')}</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

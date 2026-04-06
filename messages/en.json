@@ -13,15 +13,19 @@
   "Services": {
     "title": "Our Services",
     "web": "Web Development",
+    "webDesc": "High-performance React and Next.js applications tailored to your business needs.",
     "mobile": "Mobile Applications",
-    "design": "UI/UX Design"
+    "mobileDesc": "Cross-platform mobile experiences that engage users on iOS and Android.",
+    "design": "UI/UX Design",
+    "designDesc": "User-centric design systems that look beautiful and convert effectively."
   },
   "About": {
     "title": "About Soma Code",
     "description": "Soma Code is a software house focused on delivering modern, scalable, and user-centric digital experiences. We develop everything from agile MVPs to complex management systems, using the most advanced technologies on the market.",
     "tech": "Our Tech Stack",
-    "project": "Featured Project",
-    "shukkinDesc": "A modern, multilingual time-tracking and attendance management web application."
+    "project": "Featured Projects",
+    "shukkinDesc": "A modern, multilingual time-tracking and attendance management web application.",
+    "kantanFlowDesc": "The digital Scrum Master for solopreneurs. Hypersync between Lean Canvas, Backlog, and GitHub in a premium ecosystem."
   },
   "Contact": {
     "title": "Get In Touch",

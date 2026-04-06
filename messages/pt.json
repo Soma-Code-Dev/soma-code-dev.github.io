@@ -13,15 +13,19 @@
   "Services": {
     "title": "Nossos Serviços",
     "web": "Desenvolvimento Web",
+    "webDesc": "Aplicações React e Next.js de alta performance adaptadas às necessidades do seu negócio.",
     "mobile": "Aplicativos Móveis",
-    "design": "Design de UI/UX"
+    "mobileDesc": "Experiências móveis multiplataforma que engajam usuários no iOS e Android.",
+    "design": "Design de UI/UX",
+    "designDesc": "Sistemas de design centrados no usuário que são visualmente atraentes e convertem de forma eficaz."
   },
   "About": {
     "title": "Sobre a Soma Code",
     "description": "A Soma Code é uma software house focada em entregar experiências digitais modernas, escaláveis e focadas no usuário. Desenvolvemos desde MVPs ágeis até sistemas de gestão complexos, utilizando as tecnologias mais avançadas do mercado.",
     "tech": "Nossas Tecnologias",
-    "project": "Projeto Destaque",
-    "shukkinDesc": "Um aplicativo web moderno e multilíngue para controle de ponto e gestão de presença."
+    "project": "Projetos em Destaque",
+    "shukkinDesc": "Um aplicativo web moderno e multilíngue para controle de ponto e gestão de presença.",
+    "kantanFlowDesc": "O Scrum Master digital para solopreneurs. Sincronização entre Lean Canvas, Backlog e GitHub em um ecossistema premium."
   },
   "Contact": {
     "title": "Entre em Contato",
